@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles</title>
+    <link rel="stylesheet" href="articles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="./logo/greenspark-logo.jpg"
+          alt="Logo"
+        />
+      </div>
+      <ul class="nav-links">
+        <li><a href="../dash.html">Home</a></li>
+        <li>
+          <a href="../Feed/feed.html"
+            >Feed</a
+          >
+        </li>
+        <li>
+          <a href="../stories/stories.html"
+            >Stories</a
+          >
+        </li>
+        <li><a href="#">Articles</a></li>
+        <li>
+          <a href="../quiz/quiz.html"
+            >Quiz</a
+          >
+        </li>
+        <li>
+          <a href="../About us/About-Us.html"
+            >About Us</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="article-header">
+      <h1>Articles and more</h1>
+      <!-- here we can add a background image  -->
+    </div>
+    <!-- Dropdown container -->
+    <button type="menu" class="btn-1" id="showCategoriesBtn">
+      Show all Categories
+    </button>
+    <div id="categoryDropdown" class="dropdown-content">
+      <ul>
+        <li><a href="./category-pages/waste.html">Waste management </a></li>
+        <li><a href="./category-pages/recycling.html">Recycling</a></li>
+        <li>
+          <a href="./category-pages/solarandWind.html">Solar and Wind Energy</a>
+        </li>
+        <li>
+          <a href="./category-pages/carbon.html">Carbon emission and control</a>
+        </li>
+        <li><a href="./category-pages/students.html">Student's Zone</a></li>
+      </ul>
+    </div>
+
+    <h2 class="info-heading">For you today!</h2>
+    <section class="articles-container">
+      <div class="article-card" id="featured-1">
+        <img src="./article-images/solar_india.cms" alt="Article-1 Image" />
+        <h3>Wind - Solar hybrid project</h3>
+        <p>India's next wave of renewable Energy growth</p>
+        <a
+          href="./demo/demo1.html"
+          class="read-button"
+          >Read More</a
+        >
+      </div>
+      <!-- Article 2 -->
+      <div class="article-card" id="featured-2">
+        <img
+          src="./article-images/g20-2023-india-featured.webp"
+          alt="Article 2 Image"
+        />
+        <h3>G20 summit 2023</h3>
+        <p>
+          What can we expect with regards to our country's renewable energy
+          sources?
+        </p>
+        <a
+          href="./demo/demo1.html"
+          class="read-button"
+          >Read More</a
+        >
+      </div>
+    </section>
+    <article id="full-article"></article>
+    <footer class="footer">
+      <p>&copy; 2023 GreenSparkIndia.com</p>
+    </footer>
+
+    <script src="articles.js"></script>
+  </body>
+</html>

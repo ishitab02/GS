@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Libre+Baskerville&family=Poppins&display=swap');
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.category-heading{
+    margin-left: 2vw;
+}
+/* Style for the button with class "goBackbutton" */
+.goBackButton{
+    position: absolute;
+    right: 4vw;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e872c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.goBackButton:hover{
+    background-color:  #00b35f;
+}
+.article-card {
+    
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: 30vw;
+    
+    
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+.articles-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20vh;
+}
+/* Style the article card's image */
+.article-card img {
+    
+    height: 45vh;
+    width: 30vw;
+
+    
+}
+
+/* Style the article card's heading */
+.article-card h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Style the article card's paragraph */
+.article-card p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Style the "Read More" button */
+.read-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e872c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-button:hover {
+    background-color: #00b35f;
+}
+/* Style the article content container */
+.article-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+/* Style the close button */
+.close-button {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer{
+    margin-top: 30px;
+    background-color: #053b22;
+    padding: 5px;
+    text-align: right;
+
+}
+.footer p{
+    color: #ccc;
+
+}
