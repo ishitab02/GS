@@ -1,0 +1,104 @@
+/* Add your CSS styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(#f2f2f2, #19832a);
+    margin: 0;
+}
+
+.container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main {
+    text-align: right;
+    padding: 10px;
+}
+
+.main a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 10px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.card.sidebar {
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card.sidebar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.card.sidebar h3#user-name {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.card.sidebar a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+.card.content {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.card.content h1 {
+    margin: 0;
+    padding: 20px;
+    background-color: #6acb7fd6;
+    border-bottom: 1px solid #ccc;
+    font-size: 24px;
+}
+
+.card-body .row {
+    margin-bottom: 10px;
+}
+
+.card-body h5 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.card-body .text-secondary {
+    color: #777;
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    font-size: 18px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #131212;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00b389;
+  }
