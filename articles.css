@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Libre+Baskerville&family=Poppins&display=swap");
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.article-header {
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  background-color: rgba(25, 131, 42, 1);
+}
+.article-header h1 {
+  position: absolute;
+  color: #ffffff;
+  left: 1%;
+  top: 15%;
+  font-size: 3rem;
+}
+
+.btn-1 {
+  position: absolute;
+  right: 10vw;
+  top: 35%;
+  padding: 12px 20px; /* Adjusted padding for better button size */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Changed font */
+  font-size: 16px; /* Adjusted font size */
+  font-weight: bold; /* Added font weight for emphasis */
+  cursor: pointer;
+  background-color: #000000; /* Changed background color to blue */
+  color: #fff; /* Changed text color to white */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.btn-1:hover {
+  background-color: #00b389;
+}
+
+.info-heading {
+  font-size: 2.5rem;
+  position: absolute;
+  left: 2vw;
+  top: 30%; /* Adjust the vertical position */
+}
+
+.article-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  width: 30vw;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+}
+.articles-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20vh;
+}
+/* Style the article card's image */
+.article-card img {
+  height: 45vh;
+  width: 30vw;
+}
+
+/* Style the article card's heading */
+.article-card h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* Style the article card's paragraph */
+.article-card p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Style the "Read More" button */
+.read-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e872c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.read-button:hover {
+  background-color: #00b35f;
+}
+/* Style the article content container */
+.article-content {
+  display: none;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Style the close button */
+.close-button {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.close-button:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown container styles (initially hidden) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* Dropdown list styles */
+.dropdown-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content li {
+  padding: 10px;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+.footer {
+  margin-top: auto;
+  background-color: #286e4d;
+  padding: 5px;
+  text-align: right;
+  color: #ccc;
+}
+/* Navigation bar styles */
+nav {
+  background-color: #e8e3e3;
+  color: #161515;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+/* Logo styles */
+.logo img {
+  width: 100px; /* Adjust the logo size as needed */
+  height: 40px;
+}
+
+/* Navigation links styles */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  font-size: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #131212;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00b389;
+}

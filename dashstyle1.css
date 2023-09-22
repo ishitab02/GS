@@ -1,0 +1,52 @@
+* {
+  /* global reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial";
+}
+
+.body {
+  min-height: 100vh;
+}
+
+.side-bar {
+  position: absolute;
+  top: 0;
+  background-color: rgb(85, 197, 85);
+  width: 20vw;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  width: 20%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.name .logopic img {
+  width: 100%;
+}
+
+.side-bar li {
+  font-size: 20px;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+}
+.hidden {
+  display: none;
+}
+
+.logopic {
+  position: absolute;
+
+  left: 37vw;
+  height: 25%;
+  width: 25%;
+}
