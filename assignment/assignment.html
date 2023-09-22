@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Page</title>
+    <link rel="stylesheet" type="text/css" href="assignment.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <!-- Add the image source for your logo here -->
+          <img
+            src="path-to-your-logo-image.jpg"
+            alt="Logo"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="../dash.html">Home</a></li>
+          <li>
+            <a href="../Feed/feed.html"
+              >Feed</a
+            >
+          </li>
+          <li>
+            <a href="../stories/stories.html"
+              >Stories</a
+            >
+          </li>
+          <li><a href="../articles/articles.html">Articles</a></li>
+          <li>
+            <a href="../quiz/quiz.html"
+              >Quiz</a
+            >
+          </li>
+          <li>
+            <a href="../About us/About-Us.html"
+              >About Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    <div class="container">
+        <h1>Assignment Page</h1>
+        <!-- Assignment questions -->
+        <div class="assignment-questions">
+            <h2>Assignment of the week</h2>
+            <ol>
+                <li>Plant a sapling and upload a picture of you doing so.</li>
+                <!-- Add more assignment questions here -->
+            </ol>
+        </div>
+
+        <!-- User posts and uploads -->
+        <div class="user-actions">
+            <h2>Your Posts and Uploads</h2>
+            <textarea id="post-text" placeholder="Write your post here..."></textarea>
+            <input type="file" id="file-upload" accept="image/*">
+            <button id="post-button">Post</button>
+            <!-- Placeholder for the e-certificate link -->
+            <div id="ecertificate-link" style="display: none;">
+                <!-- E-Certificate link will be generated dynamically -->
+            </div>
+        </div>
+        
+        <!-- User posts will be displayed here -->
+        <div id="post-list"></div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 GreenSparkIndia.com</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const postText = document.getElementById('post-text');
+            const fileUpload = document.getElementById('file-upload');
+            const postButton = document.getElementById('post-button');
+            const postList = document.getElementById('post-list');
+            const eCertificateLink = document.getElementById('ecertificate-link');
+
+            postButton.addEventListener('click', () => {
+                // Get the text and file uploaded by the user
+                const text = postText.value;
+                const file = fileUpload.files[0];
+
+                // Create a new post element and append it to the list
+                const postElement = document.createElement('div');
+                postElement.className = 'post';
+                postElement.innerHTML = `
+                    <p>${text}</p>
+                    <img src="${file ? URL.createObjectURL(file) : ''}" alt="Uploaded Image">
+                `;
+
+                postList.appendChild(postElement);
+
+                // Clear the input fields
+                postText.value = '';
+                fileUpload.value = '';
+
+                // Show the e-certificate link
+                if (file) {
+                    eCertificateLink.innerHTML = '<a href="../e-certificate/e-certificate.html">Get E-Certificate</a>';
+                    eCertificateLink.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

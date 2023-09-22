@@ -1,0 +1,120 @@
+/* styles.css */
+
+html , body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(170, 239, 170);
+}
+
+.container {
+    position: absolute;
+    width: 800px;
+    top: 12vh;
+    left: 22vw;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.assignment-questions {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.assignment-questions h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.assignment-questions ol {
+    list-style: decimal;
+    margin-left: 20px;
+}
+
+.user-actions {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 97%;
+    padding: 10px ;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+
+
+
+
+#file-upload {
+    margin-bottom: 10px;
+}
+
+#post-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-posts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.post p {
+    margin: 0;
+}
+
+.post img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    font-size: 18px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #131212;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00b389;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 99.5%;
+    background-color: #286e4d;
+    padding: 5px;
+    text-align: right;
+    color: #ccc;
+  }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="e-certificate.css">
+    <title>E-Certificate Generator</title>
+</head>
+<body>
+    <div class="user-input">
+        <label for="userName">Enter Your Name:</label>
+        <input type="text" id="userName" placeholder="Your Name">
+        <button onclick="generateCertificate()">Generate Certificate</button>
+    </div>
+    <div class="certificate hidden" id="certificate">
+        <h1>Certificate of Completion</h1>
+        <p>This is to certify that</p>
+        <h2 id="recipientName"></h2>
+        <p>has successfully completed the assignment given to them</p>
+        <h3 id="courseName">to plant a tree</h3>
+        <p>on</p>
+        <p id="completionDate">September 30, 2023</p>
+    </div>
+    <script src="e-certificate.js"></script>
+</body>
+</html>
+
