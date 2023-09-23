@@ -14,8 +14,8 @@
     <div class="login form">
       <header>Login</header>
       <form action="#">
-        <input type="text" placeholder="Enter your email">
-        <input type="password" placeholder="Enter your password">
+        <input type="text" id="email" placeholder="Enter your email">
+        <input type="password" id="pwd" placeholder="Enter your password">
         <a href="#">Forgot password?</a>
         <input type="button" class="button" value="Login">
       </form>
@@ -26,19 +26,20 @@
       </div>
     </div>
     <div class="registration form">
+      <script src="script1.js"></script>
       <header>Signup</header>
-      <form action="#">
-        <input type="text" placeholder="Enter your email">
+      <form onsubmit="postUserFormData()">
+        <input type="text" id="email" placeholder="Enter your email">
 		<h3> Personal Details</h3>
       <div class="input-box">
-  <input type="text" placeholder="First Name" required/>
+  <input type="text" id="firstname" placeholder="First Name" required/>
       <div class="input-box">
-  <input type="text" placeholder="Middle Name" >
+  <input type="text" id="middlename" placeholder="Middle Name" >
       <div class="input-box">
-  <input type="text" placeholder="Last Name" required/> </br>
+  <input type="text" id="lastname" placeholder="Last Name" required/> </br>
 <form action="/action_page.php">
-  <label for="birthday">Date Of Birth:</label>
-  <input type="date" id="birthday" name="birthday" /required>
+  <label for="dob">Date Of Birth:</label>
+  <input type="date" id="dob" name="dob" required>
 </form>
 </br>
 	   <label for="sex">Sex:</label>
@@ -49,11 +50,11 @@
   <option value="others">Others</option>
   </select></br>
 <div class="input-box">
-  <input type="text" placeholder="Contact Number" required/>
+  <input type="text" id="contact" placeholder="Contact Number" required/>
 
 
 </br><label for="state">State/UT:</label >
-  <select name="state" id="state" class="form-control" /required>
+  <select name="state" id="state" class="form-control" required>
 <option selected disabled>Select</optiĒon>
 <option value="Andhra Pradesh">Andhra Pradesh</option>
 <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -96,11 +97,11 @@
 		
 
     <div class="input-box">
-	<input type="password" placeholder="Password" id=pswrd pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at atleast 8 characters"required/>
+	<input type="password" placeholder="Password" id=pwd pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at atleast 8 characters"required/>
 <input type="checkbox" onclick="myFunction()">Show Password
 <script>
 function myFunction() {
-  var x = document.getElementById("pswrd");
+  var x = document.getElementById("pwd");
   if (x.type === "password") {
     x.type = "text";
   } else {
@@ -169,7 +170,7 @@ input[type=submit] {
 </style>		
 <script>
 
-var myInput = document.getElementById("pswrd");
+var myInput = document.getElementById("pwd");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");
@@ -230,10 +231,10 @@ myInput.onkeyup = function() {
 </div>
 
 <div class="input-box">
-	<input type="password" placeholder="Re-Enter Password"  id="psw1"required/>
+	<input type="password" placeholder="Re-Enter Password"  id="pwd1"required/>
 	<script>
-var password = document.getElementById("pswrd")
-  , confirm_password = document.getElementById("psw1");
+var password = document.getElementById("pwd")
+  , confirm_password = document.getElementById("pwd1");
 
 function validatePassword(){
   if(password.value != confirm_password.value) {
@@ -245,6 +246,9 @@ function validatePassword(){
 
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
+</script>
+
+
 </script>
 	
 

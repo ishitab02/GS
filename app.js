@@ -2,7 +2,7 @@ var express=require("express");
 var bodyParser=require("body-parser");
  
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://ayanroy:VB6FFuTDcv48dYO7@cluster0.zaupyyk.mongodb.net/');
+mongoose.connect('mongodb+srv://sneha:sneha@cluster0.rodg8nr.mongodb.net/?retryWrites=true&w=majority');
 var db=mongoose.connection;
 db.on('error', console.log.bind(console, "connection error"));
 db.once('open', function(callback){
