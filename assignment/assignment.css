@@ -10,14 +10,23 @@ html , body {
 .container {
     position: absolute;
     width: 800px;
-    top: 12vh;
+    top: 24vh;
     left: 22vw;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
-
+.main-nav{
+    background-color: #ffffff;
+    
+}
+.nav-links{
+    display: flex;
+    margin-left: 67%;
+    
+    
+}
 h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -52,7 +61,21 @@ textarea {
     resize: none;
 }
 
+#ecertificate-link a {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #007bff; /* Change to your desired button background color */
+    color: #fff; /* Change to your desired button text color */
+    text-decoration: none; /* Remove underline from the anchor tag */
+    border: 1px solid #007bff; /* Add a border if desired */
+    border-radius: 5px; /* Add rounded corners if desired */
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
 
+#ecertificate-link a:hover {
+    background-color: #0056b3; /* Change to your desired hover background color */
+    border-color: #0056b3; /* Change to your desired hover border color */
+}
 
 
 
