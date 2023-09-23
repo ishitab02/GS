@@ -13,16 +13,33 @@
 .side-bar {
   position: fixed;
   background-color: rgb(119, 186, 119);
-  width: 20vw;
+  width: 15vw;
   min-height: 100vh;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-top: 0;
+  font-size: 15px;
 }
-
+.goBackButton{
+  position: absolute;
+  top: 4vh;
+  right: 4vw;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e872c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.goBackButton:hover{
+  background-color:  #00b35f;
+}
 .name {
   width: 20%;
   height: 10vh;
+  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,19 +47,19 @@
 }
 
 .name .logopic img {
-  width: 100%;
+  width: 80%;
 }
 
 .side-bar li {
   font-size: 20px;
-  padding: 10px 40px;
+  padding: 0px 40px;
   display: flex;
   align-items: center;
 }
 
-.hidden {
+/*.hidden {
   display: none;
-}
+}*/
 
 .logopic {
   position: absolute;
@@ -52,8 +69,8 @@
 }
 
 .section-hero {
-  background-color: #fcfcfc;
-  padding: 150px 0 363px 0;
+  background-color: #e7f4e9;
+  padding: 150px 0 340px 0;
 }
 
 .hero {
@@ -65,12 +82,141 @@
   align-items: center;
 }
 
-.hero-description {
+ .hero-description {
   font-size: 20px;
   line-height: 35px;
+  
   /*  margin-bottom: 0px; */
+} 
+
+.hero-img-box {
+  width: 40%;
+  height: 40%;
+  padding-left:auto;
 }
 
-.hero-img {
-  width: 100%;
+
+
+.nature img{
+  height:370px;
+  width:450px;
+  padding-right: 50px;
+  border-right: 0;
+  border-left: 50px;
+  margin-left: 25%;
+}
+
+.menu {
+  
+  width: 20vw;
+  bottom: 0;
+  background-color: #f0f0f0;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+  opacity: 0;
+  left: -15vx;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.active.menu{
+  opacity: 1;
+  left: 0px;
+  pointer-events: fill;
+}
+
+.menu_icon_box{
+  z-index: 2;
+  width: fit-content;
+  height: auto;
+  background-color: #f0f0f0;
+  margin: 20px;
+  position: absolute;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.line1 , .line2 , .line3{
+  width: 40px;
+  height: 4px;
+  margin: 10px 8px;
+  background-color: black;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.active .line1{
+  transform: translate(opx, 15px)rotate(45deg);
+}
+
+.active .line2{
+  opacity: 0;
+}
+
+.active .line3{
+  transform: translate(opx, -15px)rotate(-45deg);
+}
+
+nav{
+  padding-top: 30px;
+}
+
+nav ul{
+  margin: 0px 15px;
+}
+
+nav ul li{
+  margin-bottom: 10px;
+  list-style: none;
+  transition: 0.2s;
+}
+
+nav ul li:hover{
+  background-color: rgb(119, 186, 119);
+  border-radius: 8px;
+}
+nav ul li a{
+
+  margin-top: 25px;
+  color: black;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+.menu {
+  width: 17vw;
+  background-color: #f0f0f0;
+  position: absolute; /* Change from relative to absolute */
+  text-align: left;
+  z-index: 1;
+  opacity: 0;
+  left: -100%; /* Change to hide the menu to the left */
+  top: 0; /* Add to position the menu at the top of the sidebar */
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+
+/*.menu ul li {
+  padding: 10px;
+}
+
+.dashboard {
+  display: none;
+  margin-left: 200px; /* Ensure it doesn't overlap the sidebar 
+  padding: 20px;
+  background-color: #f0f0f0;
+  height: 100%;
+}
+
+.dashboard .active {
+  display: block;
+}*/
+.active-menu {
+  opacity: 1;
+  left: 0;
+  pointer-events: auto;
 }
