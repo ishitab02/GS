@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="water-level.css">
+    <title>Water Consumption Checker</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="../logo/greenspark-logo.jpg" height="80px"/>
+    </div>
+    <a href="../dash.html" class="goBackButton">Go back to Home</a>
+    <div class="user-input">
+        <h1>Water Consumption Checker</h1>
+        <label for="familyMembers">Total Family Members:</label>
+        <input type="number" id="familyMembers" placeholder="Enter number">
+        <label for="waterConsumed">Total Water Used (in liters):</label>
+        <input type="number" id="waterConsumed" placeholder="Enter amount">
+        <button onclick="checkWaterConsumption()">Check</button>
+    </div>
+    <div class="water-container">
+        <div class="water-level" id="waterLevel"></div>
+    </div>
+    <div class="message" id="message"></div>
+    <script src="water-level.js"></script>
+</body>
+</html>

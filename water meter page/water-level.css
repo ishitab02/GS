@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(#f2f2f2, #19832a);
+}
+.logo img{
+    position: absolute;
+    left: 5vw;
+}
+.goBackButton{
+    position: absolute;
+    top: 10vh;
+    right: 4vw;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e872c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.goBackButton:hover{
+    background-color:  #00b35f;
+}
+.user-input {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.water-container {
+    width: 200px;
+    height: 400px;
+    background-color: #b7d7e4;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+}
+
+.water-level {
+    background-color: #1E90FF;
+    transition: height 0.5s;
+}
+
+.message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+    
