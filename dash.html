@@ -3,76 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <title> </title>
-    <link rel="stylesheet" href="dashstyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dashstyle.css" />
   </head>
 
   <body>
+    
     <div class="name">
       <div class="logopic">
-        <img
-          src="C:\Users\intra\OneDrive\Desktop\techTitans\green-spark-.jpg"
-        />
+            <img
+              src="green-spark-.jpg"
+             />
       </div>
-      <!--
-      <div class="dash-content">
-        <p>Hi there whatsup</p>
-      </div> -->
+      
     </div>
-
+    <a href="#" class="goBackButton">Sign Up</a>
     <div class="side-bar">
-      <button id="toggleButton">Toggle Menu</button>
-      <div class="menu">
-        <ul>
-          <li>
-            <a href="#">
-              <span>Dashboard</span>
-            </a>
-          </li>
+
+      <!-- <div class="menu_icon_box">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+
+      </div> -->
+
+      <div class="menu_icon_box" onclick="toggleMenu()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+
+        <div class="menu">
+          <nav>
+            <ul>
+                
+
+            <li>
+             <a href="./quiz/quiz.html">
+                 <span>Quiz</span>
+             </a>
+            </li>
 
           <li>
-            <a href="C:\Users\intra\OneDrive\Desktop\techTitans\quiz.html">
-              <span>Quiz</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="./">
+            <a href="./assignment/assignment.html">
               <span>Assignment</span>
             </a>
           </li>
 
           <li>
-            <a href="C:\Users\intra\OneDrive\Desktop\techTitans\feed.html">
+            <a href="./Feed/feed.html">
               <span>Feed</span>
             </a>
           </li>
 
           <li>
-            <a href="C:\Users\intra\OneDrive\Desktop\techTitans\stories.html">
+            <a href="./stories/stories.html">
               <span>Stories</span>
             </a>
           </li>
 
           <li>
-            <a href="C:\Users\intra\OneDrive\Desktop\techTitans\articles.html">
+            <a href="./articles/articles.html">
               <span>Articles</span>
             </a>
           </li>
 
           <li>
-            <a href="#">
+            <a href="./water meter page/water-level.html">
+               <span>Water Meter</span>
+             </a>
+         </li>
+
+          <li>
+            <a href="./leaderboard/leaderboard.html">
               <span>Leaderboard</span>
             </a>
           </li>
 
-          <li>
-            <a href="#">
-              <span>Rewards</span>
-            </a>
-          </li>
+         
         </ul>
-      </div>
+      </nav>
     </div>
+</div>
 
     <section class="section-hero">
       <div class="hero">
@@ -91,15 +103,18 @@
           </p>
         </div>
         <div class="hero-img-box">
+        <div class="nature">
           <img
-            src="C:\Users\intra\OneDrive\Desktop\techTitans\nature.jpeg"
-            class="hero-img"
+            src="nature.jpeg"
             alt="Nature"
           />
         </div>
+        </div>
       </div>
     </section>
-
     <script src="dash.js"></script>
   </body>
+
+  
+  
 </html>
